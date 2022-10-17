@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Gallery</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #dbd5e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.container .photo {
+    width: 300px;
+    height: 200px;
+    border-radius: .5rem;
+    background-image: url("https://picsum.photos/300/200");
+}
+
+.container .photo:hover {
+    cursor: pointer;
+    box-shadow: 7px 7px whitesmoke;
+}
+
+</style>    
+</head>
+
+<body>
+    <div class="container">
+        <div class="photo"></div>
+        <div class="photo"></div>
+        <div class="photo"></div>
+    </div>    
+</body>
+</html>
